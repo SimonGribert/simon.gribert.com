@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "eslint": "eslint --fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -36,7 +37,7 @@
     "prettier-plugin-tailwindcss": "^0.4.1"
   },
   "lint-staged": {
-    "*.{js, jsx, ts, tsx}": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
     "*.{js,css,md,jsx,ts,tsx}": "prettier --write"
   }
 }
